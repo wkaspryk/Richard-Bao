@@ -1,0 +1,150 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    color: #fff;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+h4 span {
+  font-size: .4rem;
+  vertical-align: top;
+}
+
+img {
+  width: 90px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 6px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #E4E4E4;
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    color: #E4E4E4;
+    font-weight: lighter;
+    line-height: 1.2;
+    margin-top: 65px;
+}
+
+p a {
+  color: #E4E4E4;
+  text-decoration: none;
+}
+
+.social {
+  max-width: 90px;
+  margin: 0 auto;
+  padding-top: 150px
+}
+
+.social img {
+  display: inline;
+  float: right;
+  width: 32px;
+  padding-right: 10px;
+}
+
+/*Background Video
+*/
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('images/vid-still.png') center center / cover no-repeat;
+  }
+
+  video {
+    display: none;
+  }
+
+}
+
+@media (max-device-width: 480px) {
+    .fullscreen-bg {
+    background: url('images/vid-still.png') center center / cover no-repeat;
+  }
+
+  video {
+    display: none;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+  }
+
+  img {
+    width: 160px;
+  }
+
+  .social {
+    max-width: 295px;
+  }
+
+  .social img {
+    width: 82px;
+    padding-right: 40px;
+  }
+}
+
